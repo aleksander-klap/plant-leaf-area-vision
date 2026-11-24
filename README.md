@@ -52,7 +52,10 @@ The program was run on the whole photo set (270 photos of 15 plants) with its de
 The shuffle test checks that the result is not luck: if the optical mass carried no information about leaf area,
 shuffling the leaf areas between the plants wouldn't make the error worse.
 
-**Full report, with every plant:** [`results/report.md`](results/report.md). The CSVs of the run (every photo, every
+![Every plant predicted by the model learned without it](results/report_files/predicted.png)
+
+**Full report, with every plant and all the charts** (the fit, the error per plant, the spread over the photos, c in
+every round, the shuffle test): [`results/report.md`](results/report.md). The CSVs of the run (every photo, every
 plant, the predictions) are in [`results/`](results/). The step pictures (`--overlays`) aren't included: seven per photo,
 about 1,900 pictures; run the program with `--overlays` to make them.
 
@@ -177,7 +180,7 @@ Output in `output/`:
 
 | file | |
 |---|---|
-| `report.md` | the whole result on one page: scores, every plant, the files |
+| `report.md` | the whole result on one page: scores, every plant, the charts (in `report_files/`) |
 | `per_photo.csv` | optical mass, plant pixels and pot width of every photo |
 | `per_plant.csv` | mean optical mass per plant, and its spread over the photos |
 | `evaluation.csv` | per plant: measured and predicted leaf area (plant left out), error % |

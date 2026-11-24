@@ -7,7 +7,7 @@ name = "plant-leaf-area"
 version = "0.1.0"
 description = "Leaf area of potted plants from side photos: plant segmentation and optical mass."
 requires-python = ">=3.11"
-dependencies = ["numpy>=2", "opencv-python-headless>=4.8"]
+dependencies = ["numpy>=2", "opencv-python-headless>=4.8", "matplotlib>=3.8"]
 
 [project.scripts]
 plant-leaf-area = "plant_leaf_area.cli:main"

@@ -61,8 +61,9 @@ def shuffle_test(x, y, n=1000, seed=0):
     rng = np.random.default_rng(seed)
     real = typical_error(y, leave_one_out(x, y)[0])
     shuffled = np.array([typical_error(ys, leave_one_out(x, ys)[0]) for ys in (rng.permutation(y) for _ in range(n))])
-    return dict(shuffles=n, real=real, shuffled_median=float(np.median(shuffled)),
-                shuffled_best=float(shuffled.min()), p=float((np.sum(shuffled <= real) + 1) / (n + 1)))
+    summary = dict(shuffles=n, real=real, shuffled_median=float(np.median(shuffled)),
+                   shuffled_best=float(shuffled.min()), p=float((np.sum(shuffled <= real) + 1) / (n + 1)))
+    return summary, shuffled
 
 
 @dataclass
@@ -74,7 +75,8 @@ class Result:
     c_loo: np.ndarray       # c learned without each plant
     c: float                # c learned on all plants: the model to use
     scores: dict
-    shuffle: dict
+    shuffle: dict           # the shuffle test in numbers
+    shuffled: np.ndarray    # ... and the typical error of every shuffle
     no_leaf_area: list      # plants with an optical mass but no measured leaf area
     no_optical_mass: list   # ... and the other way round
 
@@ -91,7 +93,7 @@ def evaluate(optical_mass, leaf_area):
     x = np.array([optical_mass[p] for p in plants])
     y = np.array([leaf_area[p] for p in plants])
     pred, c = leave_one_out(x, y)
-    return Result(plants, x, y, pred, c, fit_c(x, y), scores(y, pred), shuffle_test(x, y),
+    return Result(plants, x, y, pred, c, fit_c(x, y), scores(y, pred), *shuffle_test(x, y),
                   no_leaf_area=[p for p in optical_mass if p not in leaf_area],
                   no_optical_mass=[p for p in leaf_area if p not in optical_mass])
 
