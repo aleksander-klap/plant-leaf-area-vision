@@ -1,0 +1,4 @@
+file,caption
+P10_side00.jpg,"P10, whose leaf edges are often reddish or brown. Green: leaf. Cyan: stem pixels within d of a leaf, counted as leaf (its edges). Orange: the remaining stem pixels, counted with weight w."
+P8_side00.jpg,"P8, the plant with the most red twigs. Green: leaf. Cyan: stem pixels within d of a leaf, counted as leaf (its edges). Orange: the remaining stem pixels, counted with weight w."
+P12_side00.jpg,"P12, a dense plant. Green: leaf. Cyan: stem pixels within d of a leaf, counted as leaf (its edges). Orange: the remaining stem pixels, counted with weight w."

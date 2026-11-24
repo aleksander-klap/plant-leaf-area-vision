@@ -1,0 +1,6 @@
+numpy==2.5.5
+opencv-python-headless==5.0.0.93
+scipy==1.18.1
+matplotlib==3.11.2
+pyside6==6.12.0   # only for the window of 05_density_zones/gui.py
+scikit-image==0.26.0   # centrelines (skeletons) in 10_twig_tracing; also used by 01/carve.py

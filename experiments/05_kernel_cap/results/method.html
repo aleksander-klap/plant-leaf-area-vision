@@ -1,0 +1,12 @@
+<p><b>Question:</b> with the stems counted in, which window (kernel) and cap work best together?</p>
+<p>Experiment 03 found that at kernel 64 a high cap fails: a 64 px window is full over single clumps of leaves, which
+then count for many layers. A larger window is rarely full over a single clump, so a higher cap might work there.
+This experiment tests every kernel with every cap, on the leaf + stem mask of experiment 02.</p>
+<ol>
+<li><b>Mask:</b> leaf + stem, everything the segmentation sees as plant (without the pot).</li>
+<li><b>Per pixel:</b> f = the mask's share in the kernel × kernel window around it,
+layers = −ln(1 − min(f, cap)).</li>
+<li><b>Per photo:</b> the sum of the layers over all pixels; <b>per plant:</b> the mean over its side photos.</li>
+</ol>
+<p class="small muted">Sizes are in px at 1/4 of the photo resolution, where a leaf is about 35 px across. A run's
+name is its kernel and cap: <code>k144_cap_0.990</code>. The baseline is leaf only, kernel 64, cap 0.90.</p>

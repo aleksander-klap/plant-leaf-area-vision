@@ -1,0 +1,2 @@
+setting,meaning,values
+kernel,"k: side of the square window, in px at 1/4 photo resolution (a leaf is ~35 px across), in which the leaf share around every pixel is measured. A small window sees a few leaves, a large one a whole part of the plant.",32 to 256 px in steps of 8 (baseline 64)

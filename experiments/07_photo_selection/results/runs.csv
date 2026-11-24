@@ -1,0 +1,57 @@
+run,photos,plant,optical_mass
+baseline,all,P1,186877.4
+baseline,all,P2,173982.0
+baseline,all,P3,226758.6
+baseline,all,P4,151976.6
+baseline,all,P5,211302.5
+baseline,all,P6,183545.7
+baseline,all,P7,201092.0
+baseline,all,P8,156880.0
+baseline,all,P9,169281.3
+baseline,all,P10,162788.3
+baseline,all,P11,201344.9
+baseline,all,P12,206501.6
+baseline,all,P13,138374.9
+baseline,all,P15,152085.4
+even,most even,P1,195112.5
+even,most even,P2,176391.5
+even,most even,P3,188071.0
+even,most even,P4,149885.1
+even,most even,P5,199665.8
+even,most even,P6,192184.1
+even,most even,P7,190532.0
+even,most even,P8,143128.3
+even,most even,P9,162846.2
+even,most even,P10,154698.5
+even,most even,P11,207636.5
+even,most even,P12,210783.5
+even,most even,P13,111437.4
+even,most even,P15,143636.6
+clumped,most clumped,P1,194414.2
+clumped,most clumped,P2,186886.0
+clumped,most clumped,P3,216883.5
+clumped,most clumped,P4,156102.8
+clumped,most clumped,P5,197809.8
+clumped,most clumped,P6,177385.7
+clumped,most clumped,P7,193036.9
+clumped,most clumped,P8,170070.5
+clumped,most clumped,P9,163540.9
+clumped,most clumped,P10,163793.5
+clumped,most clumped,P11,200805.4
+clumped,most clumped,P12,187866.6
+clumped,most clumped,P13,129476.9
+clumped,most clumped,P15,156004.0
+pair,even + clumped,P1,194763.3
+pair,even + clumped,P2,181638.8
+pair,even + clumped,P3,202477.2
+pair,even + clumped,P4,152994.0
+pair,even + clumped,P5,198737.8
+pair,even + clumped,P6,184784.9
+pair,even + clumped,P7,191784.4
+pair,even + clumped,P8,156599.4
+pair,even + clumped,P9,163193.5
+pair,even + clumped,P10,159246.0
+pair,even + clumped,P11,204221.0
+pair,even + clumped,P12,199325.1
+pair,even + clumped,P13,120457.1
+pair,even + clumped,P15,149820.3

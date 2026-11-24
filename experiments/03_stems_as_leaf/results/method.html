@@ -1,0 +1,18 @@
+<p><b>Question:</b> does the optical mass get better if the stems and twigs count as leaf?</p>
+<p>The mask check (experiment 01) showed that the leaf mask leaves out 12–20% of the plant: twigs, brown leaf edges
+and parts of reddish leaves. The segmentation calls them "stem". Two reasons they might belong in the optical
+mass:</p>
+<ul>
+<li><b>Some of it is leaf</b> the mask misses (brown edges, reddish leaves).</li>
+<li><b>Twigs block the view</b> like leaves do. The optical mass reads how much wall shows through the plant, and a
+twig in front of the wall is not a gap.</li>
+</ul>
+<p><b>The method</b> is the baseline with only the mask changed:</p>
+<ol>
+<li><b>Mask:</b> leaf + stem, i.e. everything the segmentation sees as plant (without the pot), instead of leaf
+only.</li>
+<li><b>Per pixel:</b> f = the mask's share in the 64 px window around it, layers = −ln(1 − min(f, 0.9)).</li>
+<li><b>Per photo:</b> the sum of the layers over all pixels; <b>per plant:</b> the mean over its side photos.</li>
+</ol>
+<p class="small muted">One run against the baseline, with nothing tuned, so the honest score is the run's own score.
+The kernel (64 px) and the cap (0.90) are the baseline's; the cap is tested in experiment 03.</p>

@@ -1,0 +1,6 @@
+rank,run,mask,kernel,cap,c,typical_error_pct,mean_error_pct,r2,within_5pct,vs_baseline_points
+baseline,baseline,leaf,64,0.9,1.50275,4.19,3.57,0.9388,7,0.0
+1,twig_corrected,"leaf+edge+wide, twig as wood",144,0.99,1.3932,3.54,2.849,0.9563,10,-0.65
+2,no_twigs,leaf+edge+wide,144,0.99,1.43371,3.574,3.028,0.9555,11,-0.616
+3,all_stems,leaf+edge+wide+twig,144,0.99,1.34098,3.718,3.077,0.9518,11,-0.472
+4,leaf,leaf,144,0.99,1.68782,4.116,3.461,0.941,9,-0.074

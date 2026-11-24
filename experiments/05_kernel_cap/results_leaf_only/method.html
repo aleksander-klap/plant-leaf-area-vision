@@ -1,0 +1,12 @@
+<p><b>Question:</b> is 64 px the right window for the optical mass?</p>
+<p>A blueberry leaf is about 35 px across at 1/4 resolution, and many leaves are bigger. A 64 px window holds only a
+few leaves, so one big leaf facing the camera can look like a dense spot. A bigger window sees more of the plant
+around each pixel.</p>
+<p><b>The method</b> is the baseline with only the window (kernel) size changed:</p>
+<ol>
+<li><b>Per pixel:</b> f = the leaf share in the kernel × kernel window around it.</li>
+<li><b>Per photo:</b> optical mass = the sum over all pixels of −ln(1 − min(f, 0.9)).</li>
+<li><b>Per plant:</b> the mean over its side photos.</li>
+</ol>
+<p class="small muted">A run's name is its kernel: <code>k144</code> is a 144 px window. <code>k064</code> is the
+baseline itself.</p>

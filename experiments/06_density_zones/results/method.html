@@ -1,0 +1,20 @@
+<p><b>Question:</b> is the optical mass better if the leaf layers are measured per zone of similar density instead
+of per pixel?</p>
+<p>A bush has regions: an airy edge, a medium part, a dense core. The baseline gives every pixel its own number of
+leaf layers, from the leaf share in the 64 px window around it. Here those regions are found first, each one's
+density is measured on the mask itself, and all its pixels get the region's layers.</p>
+<p><b>How each photo is cut into zones:</b></p>
+<ol>
+<li><b>Density map:</b> the leaf share in a <i>window</i> around every pixel. It is used only to draw the zones.</li>
+<li><b>Plant area:</b> where that density is at least <i>edge</i>, plus every leaf pixel. It includes the gaps
+between the leaves, so a zone can have a leaf share below 1.</li>
+<li><b>Levels:</b> the densities of the leaf pixels are grouped into <i>levels</i> groups, from airy to dense.
+Pieces smaller than <i>min zone</i> are merged into the zone around them.</li>
+<li><b>Zones:</b> every connected piece of one level is a zone.</li>
+</ol>
+<p><b>Then, per zone:</b> f = leaf pixels / zone pixels, layers = −ln(1 − min(f, <i>cap</i>)), and the zone counts
+zone pixels × layers. The optical mass of a photo is the sum over its zones; of a plant, the mean over its side
+photos. An airy zone counts about as its leaf pixels; only dense zones are scaled up.</p>
+<p class="small muted">Sizes are in px at 1/4 of the photo resolution, where a leaf is about 35 px across and about
+1000 px in area. A run's name lists its settings: <code>w192_l4_m2000_e0.02_c0.85</code> is window 192, levels 4,
+min zone 2000, edge 0.02, cap 0.85.</p>

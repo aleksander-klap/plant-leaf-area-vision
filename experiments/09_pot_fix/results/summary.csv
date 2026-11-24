@@ -1,0 +1,7 @@
+rank,run,model,masks,pot_scale,c,typical_error_pct,mean_error_pct,r2,within_5pct,vs_baseline_points
+baseline,baseline,baseline,old,no,1.50422,4.055,3.48,0.9422,8,0.0
+1,04_best_new_masks,04 best,new,no,1.31774,3.594,3.028,0.9545,10,-0.46
+2,04_best_old_masks,04 best,old,no,1.34214,3.698,2.992,0.9519,12,-0.357
+3,baseline_new_masks,baseline,new,no,1.48388,3.744,3.375,0.9507,9,-0.311
+4,04_best_new_masks_scaled,04 best,new,yes,1.32253,3.782,3.186,0.9497,10,-0.272
+5,baseline_new_masks_scaled,baseline,new,yes,1.48945,3.79,3.427,0.9495,9,-0.265

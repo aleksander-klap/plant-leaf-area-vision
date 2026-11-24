@@ -1,0 +1,79 @@
+run,model,masks,pot_scale,plant,optical_mass
+baseline,baseline,old,no,P2,173982.0
+baseline,baseline,old,no,P3,226758.6
+baseline,baseline,old,no,P4,151976.6
+baseline,baseline,old,no,P5,211302.5
+baseline,baseline,old,no,P6,183545.7
+baseline,baseline,old,no,P7,201092.0
+baseline,baseline,old,no,P8,156880.0
+baseline,baseline,old,no,P9,169281.3
+baseline,baseline,old,no,P10,162788.3
+baseline,baseline,old,no,P11,201344.9
+baseline,baseline,old,no,P12,206501.6
+baseline,baseline,old,no,P13,138374.9
+baseline,baseline,old,no,P15,152085.4
+baseline_new_masks,baseline,new,no,P2,175069.0
+baseline_new_masks,baseline,new,no,P3,230146.0
+baseline_new_masks,baseline,new,no,P4,152865.6
+baseline_new_masks,baseline,new,no,P5,214758.0
+baseline_new_masks,baseline,new,no,P6,185432.0
+baseline_new_masks,baseline,new,no,P7,204034.6
+baseline_new_masks,baseline,new,no,P8,158778.8
+baseline_new_masks,baseline,new,no,P9,169711.0
+baseline_new_masks,baseline,new,no,P10,163847.8
+baseline_new_masks,baseline,new,no,P11,206351.0
+baseline_new_masks,baseline,new,no,P12,212166.7
+baseline_new_masks,baseline,new,no,P13,139076.4
+baseline_new_masks,baseline,new,no,P15,154264.4
+baseline_new_masks_scaled,baseline,new,yes,P2,172459.3
+baseline_new_masks_scaled,baseline,new,yes,P3,230146.0
+baseline_new_masks_scaled,baseline,new,yes,P4,152100.3
+baseline_new_masks_scaled,baseline,new,yes,P5,212615.8
+baseline_new_masks_scaled,baseline,new,yes,P6,184503.7
+baseline_new_masks_scaled,baseline,new,yes,P7,204034.6
+baseline_new_masks_scaled,baseline,new,yes,P8,160386.7
+baseline_new_masks_scaled,baseline,new,yes,P9,169711.0
+baseline_new_masks_scaled,baseline,new,yes,P10,163847.8
+baseline_new_masks_scaled,baseline,new,yes,P11,204292.6
+baseline_new_masks_scaled,baseline,new,yes,P12,210576.4
+baseline_new_masks_scaled,baseline,new,yes,P13,139426.5
+baseline_new_masks_scaled,baseline,new,yes,P15,154264.4
+04_best_old_masks,04 best,old,no,P2,184567.3
+04_best_old_masks,04 best,old,no,P3,262621.4
+04_best_old_masks,04 best,old,no,P4,167983.4
+04_best_old_masks,04 best,old,no,P5,243382.8
+04_best_old_masks,04 best,old,no,P6,212188.7
+04_best_old_masks,04 best,old,no,P7,219176.3
+04_best_old_masks,04 best,old,no,P8,185290.5
+04_best_old_masks,04 best,old,no,P9,182046.7
+04_best_old_masks,04 best,old,no,P10,184479.5
+04_best_old_masks,04 best,old,no,P11,221461.3
+04_best_old_masks,04 best,old,no,P12,235182.9
+04_best_old_masks,04 best,old,no,P13,148413.4
+04_best_old_masks,04 best,old,no,P15,165197.1
+04_best_new_masks,04 best,new,no,P2,186391.4
+04_best_new_masks,04 best,new,no,P3,267629.7
+04_best_new_masks,04 best,new,no,P4,169070.2
+04_best_new_masks,04 best,new,no,P5,245677.2
+04_best_new_masks,04 best,new,no,P6,218356.3
+04_best_new_masks,04 best,new,no,P7,224882.3
+04_best_new_masks,04 best,new,no,P8,187263.7
+04_best_new_masks,04 best,new,no,P9,182427.1
+04_best_new_masks,04 best,new,no,P10,186090.2
+04_best_new_masks,04 best,new,no,P11,231630.6
+04_best_new_masks,04 best,new,no,P12,241975.7
+04_best_new_masks,04 best,new,no,P13,148952.0
+04_best_new_masks,04 best,new,no,P15,167221.9
+04_best_new_masks_scaled,04 best,new,yes,P2,183613.0
+04_best_new_masks_scaled,04 best,new,yes,P3,267629.7
+04_best_new_masks_scaled,04 best,new,yes,P4,168223.8
+04_best_new_masks_scaled,04 best,new,yes,P5,243226.6
+04_best_new_masks_scaled,04 best,new,yes,P6,217263.1
+04_best_new_masks_scaled,04 best,new,yes,P7,224882.3
+04_best_new_masks_scaled,04 best,new,yes,P8,189160.0
+04_best_new_masks_scaled,04 best,new,yes,P9,182427.1
+04_best_new_masks_scaled,04 best,new,yes,P10,186090.2
+04_best_new_masks_scaled,04 best,new,yes,P11,229320.1
+04_best_new_masks_scaled,04 best,new,yes,P12,240162.0
+04_best_new_masks_scaled,04 best,new,yes,P13,149327.0
+04_best_new_masks_scaled,04 best,new,yes,P15,167221.9

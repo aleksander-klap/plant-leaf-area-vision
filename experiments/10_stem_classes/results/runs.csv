@@ -1,0 +1,66 @@
+run,mask,kernel,cap,plant,optical_mass
+baseline,leaf,64,0.9,P2,173982.0
+baseline,leaf,64,0.9,P3,226758.6
+baseline,leaf,64,0.9,P4,151976.6
+baseline,leaf,64,0.9,P5,211302.5
+baseline,leaf,64,0.9,P6,183545.7
+baseline,leaf,64,0.9,P7,201092.0
+baseline,leaf,64,0.9,P8,156880.0
+baseline,leaf,64,0.9,P9,169281.3
+baseline,leaf,64,0.9,P10,162788.3
+baseline,leaf,64,0.9,P11,201344.9
+baseline,leaf,64,0.9,P12,206501.6
+baseline,leaf,64,0.9,P13,138374.9
+baseline,leaf,64,0.9,P15,152085.4
+leaf,leaf,144,0.99,P2,155484.9
+leaf,leaf,144,0.99,P3,203349.3
+leaf,leaf,144,0.99,P4,134862.8
+leaf,leaf,144,0.99,P5,188387.8
+leaf,leaf,144,0.99,P6,162565.6
+leaf,leaf,144,0.99,P7,178025.2
+leaf,leaf,144,0.99,P8,141076.1
+leaf,leaf,144,0.99,P9,151135.3
+leaf,leaf,144,0.99,P10,147686.7
+leaf,leaf,144,0.99,P11,180327.7
+leaf,leaf,144,0.99,P12,182094.4
+leaf,leaf,144,0.99,P13,121581.9
+leaf,leaf,144,0.99,P15,132635.3
+all_stems,leaf+edge+wide+twig,144,0.99,P2,184567.3
+all_stems,leaf+edge+wide+twig,144,0.99,P3,262478.3
+all_stems,leaf+edge+wide+twig,144,0.99,P4,167983.4
+all_stems,leaf+edge+wide+twig,144,0.99,P5,243382.8
+all_stems,leaf+edge+wide+twig,144,0.99,P6,212187.1
+all_stems,leaf+edge+wide+twig,144,0.99,P7,219176.3
+all_stems,leaf+edge+wide+twig,144,0.99,P8,185290.5
+all_stems,leaf+edge+wide+twig,144,0.99,P9,182046.7
+all_stems,leaf+edge+wide+twig,144,0.99,P10,184479.5
+all_stems,leaf+edge+wide+twig,144,0.99,P11,221459.1
+all_stems,leaf+edge+wide+twig,144,0.99,P12,235169.7
+all_stems,leaf+edge+wide+twig,144,0.99,P13,148413.4
+all_stems,leaf+edge+wide+twig,144,0.99,P15,165197.1
+no_twigs,leaf+edge+wide,144,0.99,P2,176895.8
+no_twigs,leaf+edge+wide,144,0.99,P3,243115.7
+no_twigs,leaf+edge+wide,144,0.99,P4,157489.6
+no_twigs,leaf+edge+wide,144,0.99,P5,224868.0
+no_twigs,leaf+edge+wide,144,0.99,P6,195065.3
+no_twigs,leaf+edge+wide,144,0.99,P7,207889.7
+no_twigs,leaf+edge+wide,144,0.99,P8,170023.2
+no_twigs,leaf+edge+wide,144,0.99,P9,174899.1
+no_twigs,leaf+edge+wide,144,0.99,P10,173012.4
+no_twigs,leaf+edge+wide,144,0.99,P11,210020.0
+no_twigs,leaf+edge+wide,144,0.99,P12,216905.4
+no_twigs,leaf+edge+wide,144,0.99,P13,140514.1
+no_twigs,leaf+edge+wide,144,0.99,P15,154594.4
+twig_corrected,"leaf+edge+wide, twig as wood",144,0.99,P2,179250.3
+twig_corrected,"leaf+edge+wide, twig as wood",144,0.99,P3,252133.4
+twig_corrected,"leaf+edge+wide, twig as wood",144,0.99,P4,160963.1
+twig_corrected,"leaf+edge+wide, twig as wood",144,0.99,P5,233502.6
+twig_corrected,"leaf+edge+wide, twig as wood",144,0.99,P6,203301.8
+twig_corrected,"leaf+edge+wide, twig as wood",144,0.99,P7,213055.5
+twig_corrected,"leaf+edge+wide, twig as wood",144,0.99,P8,175573.9
+twig_corrected,"leaf+edge+wide, twig as wood",144,0.99,P9,177575.0
+twig_corrected,"leaf+edge+wide, twig as wood",144,0.99,P10,176714.2
+twig_corrected,"leaf+edge+wide, twig as wood",144,0.99,P11,215896.6
+twig_corrected,"leaf+edge+wide, twig as wood",144,0.99,P12,225088.4
+twig_corrected,"leaf+edge+wide, twig as wood",144,0.99,P13,143018.5
+twig_corrected,"leaf+edge+wide, twig as wood",144,0.99,P15,157805.4

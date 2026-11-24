@@ -1,0 +1,3 @@
+file,caption
+P10_side00.jpg,"P10, an open plant, at kernel 64: the mask (grey), the pixels whose window is fuller than 0.90 (yellow), where the 0.90 cap acts, and fuller than 0.97 (red), where even a 0.97 cap would act. Only these pixels change when the cap is raised. On this open plant the cap acts on a few small clumps: 3% of the mask with leaf only, 7% with the stems."
+P12_side00.jpg,"P12, the densest plant, the same way. With the stems counted in, the gaps in the core fill up: the cap acts on 16% of the mask instead of 6%, and a few spots are even fuller than 0.97."

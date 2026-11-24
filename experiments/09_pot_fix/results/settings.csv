@@ -1,0 +1,4 @@
+setting,meaning,values
+model,"baseline: leaf mask, kernel 64, cap 0.90. 04 best: leaf + stem mask, kernel 144, cap 0.995","baseline, 04 best"
+masks,old: the segmentation before the pot fix (results of experiment 04). new: with the pot fix,"old, new"
+pot_scale,yes: every plant's optical mass multiplied by (199 / its median pot width)^2,"no, yes"

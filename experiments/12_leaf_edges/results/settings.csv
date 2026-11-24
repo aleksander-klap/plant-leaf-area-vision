@@ -1,0 +1,5 @@
+setting,meaning,values
+res,"resolution of the segmentation: quarter (as always) or full (x4, reduced to 1/4 as fractions)","quarter, full"
+d,stem pixels within d px of the leaf mask count as leaf (its edges); px at 1/4 resolution,"0, 1, 2, 3, 4"
+w,"weight of the remaining stem pixels: 0 = left out (baseline), 1 = counted fully (02-04)","0, 0.25, 0.5, 0.75, 1"
+model,"k64: kernel 64, cap 0.90 (the baseline's). k144: kernel 144, cap 0.995 (best run of 04)","k64, k144"

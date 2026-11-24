@@ -1,0 +1,2 @@
+setting,meaning,values
+mask,"which pixels count as plant: leaf only (the baseline), or leaf + stem (everything the segmentation sees as plant, without the pot)","leaf (baseline), leaf+stem"

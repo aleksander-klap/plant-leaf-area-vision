@@ -1,0 +1,4 @@
+file,caption
+P12_side00.jpg,"P12 at 0°: the photo, the old masks and the new ones (leaf green, stem orange, in front of the wall but counted as neither magenta; cyan: the new rim line). The dense triangle above the pot on the left, a hole before, is now leaf: +4.2% leaf pixels in this photo."
+P11_side140.jpg,"P11 at 140°: the shaded mass above the rim, a hole before, is now counted, as stem (too dark and too large a blob for the leaf rule): +36% stem pixels in this photo."
+P6_side120.jpg,P6 at 120°: the cost of removing the trunk zone. The bare trunk above the soil and a thin strip along the rim (soil or the back of the rim) now count as stem (+27% stem pixels in this photo).

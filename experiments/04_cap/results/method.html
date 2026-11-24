@@ -1,0 +1,18 @@
+<p><b>Question:</b> is 0.90 the right cap, and does the answer change when the stems are counted in?</p>
+<p>Every pixel gets −ln(1 − min(f, cap)) leaf layers, where f is the mask's share in the 64 px window around it. The
+cap stops a nearly solid window from counting for an unlimited number of layers. At 0.90 a window counts for at most
+2.30 layers, but in a dense core leaves hide behind leaves deeper than that. A higher cap lets those windows count
+for more:</p>
+<table><tr><th>cap</th><td>0.85</td><td>0.90</td><td>0.95</td><td>0.97</td><td>0.98</td><td>0.99</td><td>0.995</td>
+<td>0.999</td></tr>
+<tr><th>max layers</th><td>1.90</td><td>2.30</td><td>3.00</td><td>3.51</td><td>3.91</td><td>4.61</td><td>5.30</td>
+<td>6.91</td></tr></table>
+<p><b>The method</b> is the baseline with the cap changed, on both masks:</p>
+<ol>
+<li><b>Mask:</b> leaf only (the baseline), or leaf + stem (experiment 02).</li>
+<li><b>Per pixel:</b> f = the mask's share in the 64 px window around it, layers = −ln(1 − min(f, cap)).</li>
+<li><b>Per photo:</b> the sum of the layers over all pixels; <b>per plant:</b> the mean over its side photos.</li>
+</ol>
+<p class="small muted">The cap only changes pixels whose window is fuller than the cap. Counting the stems fills the
+windows, so with leaf + stem the cap acts on more of the plant. A run's name is its mask and cap:
+<code>leaf_stem_cap_0.990</code>. <code>leaf_cap_0.900</code> is the baseline itself.</p>

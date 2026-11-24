@@ -1,0 +1,18 @@
+<p><b>Question:</b> do the baseline and the best run of experiment 04 get better when the segmentation stops
+cutting leaves away at the pot, and when every plant is brought to the same scale by its pot?</p>
+<p><b>1. Pot fix</b> (in the segmentation, <code>common/masks.py</code>). Before, dark, shaded leaves right above
+the pot merged with the dark pot into one "background object", where neither leaf nor stem was looked for; P12 lost a
+dense, fully covered triangle of leaves this way. Now:</p>
+<ul>
+<li>the rim line is measured from the pot's bottom, which leaves never hide: bottom − 0.945 × the pot width (all pots
+are the same model);</li>
+<li>nothing above the rim line counts as pot: the part of a dark object above it is freed;</li>
+<li>the "trunk zone" just above the rim, where non-green pixels never counted as leaf, is gone.</li>
+</ul>
+<p><b>2. Pot scaling.</b> The optical mass is in pixels, the leaf area in mm². If the camera distance differed between
+plants, the same plant would give a different pixel count. Every plant's optical mass is multiplied by
+(199 / its median pot width)², 199 px being the median over all photos. The median over the plant's 18 photos is
+used because a single photo's width jitters by 2–3% with the detection.</p>
+<p class="small muted">Both are tested on the baseline (leaf, kernel 64, cap 0.90) and on the best run of 04 (leaf
++ stem, kernel 144, cap 0.995). The "old masks" runs are taken from experiment 04, made before the fix. These are
+not a sweep: compare each model's three versions with each other; the nested score doesn't mean much here.</p>

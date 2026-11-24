@@ -1,0 +1,5 @@
+rank,run,photos,c,typical_error_pct,mean_error_pct,r2,within_5pct,vs_baseline_points
+baseline,baseline,all,1.55234,5.737,4.391,0.8866,8,0.0
+1,clumped,most clumped,1.57016,9.368,7.317,0.6976,7,3.631
+2,pair,even + clumped,1.58878,9.449,6.688,0.6923,6,3.712
+3,even,most even,1.60259,11.331,7.55,0.5576,6,5.594

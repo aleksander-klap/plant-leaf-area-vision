@@ -1,0 +1,3 @@
+rank,run,mask,c,typical_error_pct,mean_error_pct,r2,within_5pct,vs_baseline_points
+baseline,baseline,leaf,1.50422,4.055,3.48,0.9422,8,0.0
+1,leaf_stem,leaf+stem,1.21452,4.161,3.749,0.9391,10,0.107

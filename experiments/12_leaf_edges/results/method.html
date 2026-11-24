@@ -1,0 +1,20 @@
+<p><b>Question:</b> how should the stem mask be counted? The segmentation's "stem" mask is everything in front of the
+wall, near the plant, that isn't leaf: real twigs, but also reddish and brown leaf edges, leaves seen edge-on and
+shaded leaf. Leaving it out (the baseline) loses the leaf parts; counting it fully (experiments 02–04) counts the twigs
+as leaf, which overshoots on P8.</p>
+<ol>
+<li><b>Leaf edges by distance (d):</b> stem pixels within d px of the leaf mask are the leaf's own edges and count as
+leaf. Twigs touch leaves only where a leaf grows off them, so most of a twig stays further away.</li>
+<li><b>A weight for the rest (w):</b> the remaining stem pixels count with a weight w, from 0 (left out, as the
+baseline) to 1 (counted fully, as in 02–04): the best average treatment of twigs, edge-on leaves and shaded leaf.</li>
+<li><b>Full resolution (res):</b> the masks segmented at full resolution, where a twig is 12–24 px wide instead of
+3–6 px and leaf edges are sharper, then reduced to 1/4 resolution as fractions, so the optical mass uses the same
+windows. Every size in the segmentation is scaled ×4 (areas ×16).</li>
+</ol>
+<p>Per photo: <code>mask = leaf + edge_d + w × (stem − edge_d)</code>, then the optical mass as always. Both on the
+baseline's settings (kernel 64, cap 0.90) and on those of the best run of 04 (kernel 144, cap 0.995). All on the
+pot-fixed masks of experiment 09.</p>
+<p class="small muted">A run's name is its resolution, d, w and model: <code>full_d2_w0.50_k144</code> is full
+resolution, leaf edges within 2 px, the remaining stems at weight 0.5, kernel 144 with cap 0.995. d is in px at 1/4
+resolution (×4 at full). The baseline is <code>quarter_d0_w0.00_k64</code>: leaf only, kernel 64, cap 0.90, on the
+pot-fixed masks.</p>
