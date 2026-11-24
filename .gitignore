@@ -1,0 +1,14 @@
+# Python virtual environment
+.venv/
+
+# Python caches and build files
+__pycache__/
+*.egg-info/
+
+# program output (CSV, overlays)
+output/
+
+# experiments: cached masks, and the per-photo pages of the mask check (too large; the examples are kept)
+experiments/cache/
+experiments/02_mask_check/results/P*/
+experiments/02_mask_check/results/index.html
