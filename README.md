@@ -11,6 +11,9 @@ them.
 
 ![The plant mask of P12, seen from the front](docs/images/P12_side00_5_plant.jpg)
 
+The [Blueberry Photo Set](https://stichtingfontys-my.sharepoint.com/:f:/g/personal/543803_student_fontys_nl/IgCi29rLNlV9RLbcR7yX7a66AegQ3kuBNeGg2IEwI7AZd3g?e=TViqY2) that we created is posted on School Organization OneDrive. You should be 
+able to see it with the Microsoft account (I hope).
+
 ## AI usage
 
 The coding was mostly delegated to AI. The project is about developing the **method**: how to get from photos to
@@ -35,6 +38,7 @@ and the measurements are ours.
   hasn't been tested on green summer plants.
 
 ## Results
+[RESTULTS REPORT HERE](./results/report.md)
 
 The program was run on the whole photo set (270 photos of 15 plants) with its default settings: kernel 144, cap
 0.995, 1/4 resolution. The leaf area of the 13 plants with a measured leaf area was predicted with leave-one-out
